@@ -1,0 +1,102 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "NOALBS",
+  "projectDescription": "Automatic OBS scene switching based on stream bitrate for content creators.",
+  "theme": "aspen",
+  "primaryColor": "#506fcf",
+  "lightColor": "#273664",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/overview",
+              "configuration/software",
+              "configuration/chat",
+              "configuration/switcher",
+              "configuration/optional-features"
+            ]
+          },
+          {
+            "group": "Stream Servers",
+            "pages": [
+              "stream-servers/overview",
+              "stream-servers/nginx",
+              "stream-servers/srt-live-server",
+              "stream-servers/belabox",
+              "stream-servers/mediamtx",
+              "stream-servers/nimble",
+              "stream-servers/node-media-server",
+              "stream-servers/rist",
+              "stream-servers/xiu",
+              "stream-servers/obs-source"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/chat-commands",
+              "features/scene-switching",
+              "features/multi-server",
+              "features/transcoding-check",
+              "features/auto-recording"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/multi-user",
+              "advanced/logging",
+              "advanced/building-from-source",
+              "advanced/depends-on"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting",
+              "help/community"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automatic scene switching based on bitrate thresholds",
+    "Support for multiple stream servers (NGINX, SRT, BELABOX, etc.)",
+    "Twitch and Kick chat integration with commands",
+    "OBS WebSocket v5 integration",
+    "Multi-language support (14 languages)",
+    "RTT-based switching for SRT streams",
+    "Configurable retry attempts and triggers",
+    "Scene dependency management",
+    "Auto-stop on host/raid",
+    "Transcoding quality checks"
+  ],
+  "publicApiSurface": [
+    "OBS WebSocket v5 connection (host, port, password)",
+    "Chat commands: !start, !stop, !switch, !bitrate, !trigger, !fix, !refresh",
+    "Stream server integrations: Nginx, SrtLiveServer, Belabox, Mediamtx, Nimble, NodeMediaServer, Rist, Xiu, IrlHosting, OpenIRL",
+    "Configuration API: config.json structure",
+    "Switcher settings: bitrateSwitcherEnabled, retryAttempts, triggers (low, rtt, offline)",
+    "Scene switching: normal, low, offline scenes",
+    "Optional scenes: starting, ending, privacy, refresh",
+    "Chat platforms: Twitch, Kick",
+    "Environment variables: TWITCH_BOT_USERNAME, TWITCH_BOT_OAUTH, CONFIG_DIR, LOG_DIR",
+    "Web server API on port 4455"
+  ]
+}
